@@ -6,7 +6,7 @@ class Crud:
 
 
         # Cargar ruta absoluta
-        ubicacion = os.path.dirname(os.path.abspath(__file__))
+        ubicacion = os.getcwd()
         self.ruta_archivo = os.path.join(ubicacion, nombre_archivo)
 
         if not os.path.exists(self.ruta_archivo):
